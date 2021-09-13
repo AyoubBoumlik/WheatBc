@@ -1,0 +1,1309 @@
+{
+    "contractName": "SiloRole",
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "SiloAdded",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "SiloRemoved",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "addSilo",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                }
+            ],
+            "name": "isSilo",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "renounceSilo",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"SiloAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"SiloRemoved\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addSilo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isSilo\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceSilo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"c:/Users/ayoub/prog/WheatBc/contracts/WheatAcessControl/SiloRole.sol\":\"SiloRole\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"c:/Users/ayoub/prog/WheatBc/contracts/WheatAcessControl/Roles.sol\":{\"keccak256\":\"0x72a270954e363227c8da0df4964f940e469dddd6dbb8edcb09b9983168a6fb4b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dcdcb534544196fe4e578b81872c7e07b97dc59fc4089e5bfa9dc584991a096c\",\"dweb:/ipfs/QmZDbof1N2AoLtA12eQBBFt2kNnrKHTv18rw4UpqDRBfQC\"]},\"c:/Users/ayoub/prog/WheatBc/contracts/WheatAcessControl/SiloRole.sol\":{\"keccak256\":\"0xda7ef2bc3501755f07b3f837c82d7dea1a6bb456e69270060ab13d2cbdf43b18\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://13a192b72d1a35d78790b3ea319b42c26c25d2b6ffdf5dd31f87fd02ce16acd4\",\"dweb:/ipfs/QmWhkXBMM7yGiRM3TJonQm7N5rdQ8HpzwwG8zwzeCeQbmU\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5061001a3361001f565b6100ef565b61003781600061006e60201b6100c51790919060201c565b6040516001600160a01b038216907f4c8efb2f42d55d7d831e421921a3b89a7806bb65fdc7c5ccc226f2706660318990600090a250565b6001600160a01b03811661008157600080fd5b61008b82826100ba565b1561009557600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b60006001600160a01b0382166100cf57600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b610278806100fe6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806312f0dcd8146100465780632e4a437b1461006d5780637e4704f314610077575b600080fd5b610059610054366004610212565b61008a565b604051901515815260200160405180910390f35b61007561009c565b005b610075610085366004610212565b6100a7565b60006100968183610111565b92915050565b6100a533610146565b565b6100b03361008a565b6100b957600080fd5b6100c281610188565b50565b6001600160a01b0381166100d857600080fd5b6100e28282610111565b156100ec57600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b60006001600160a01b03821661012657600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b6101516000826101ca565b6040516001600160a01b038216907f667f5da192ef185267b681a3ea60c6a496a92711141d3e9cd25b4be0048f30ff90600090a250565b6101936000826100c5565b6040516001600160a01b038216907f4c8efb2f42d55d7d831e421921a3b89a7806bb65fdc7c5ccc226f2706660318990600090a250565b6001600160a01b0381166101dd57600080fd5b6101e78282610111565b6101f057600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19169055565b60006020828403121561022457600080fd5b81356001600160a01b038116811461023b57600080fd5b939250505056fea26469706673582212201506976756b973a13acf58e5837d23484f5bb3db3bf029657438fc202fdd789b64736f6c63430008070033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c806312f0dcd8146100465780632e4a437b1461006d5780637e4704f314610077575b600080fd5b610059610054366004610212565b61008a565b604051901515815260200160405180910390f35b61007561009c565b005b610075610085366004610212565b6100a7565b60006100968183610111565b92915050565b6100a533610146565b565b6100b03361008a565b6100b957600080fd5b6100c281610188565b50565b6001600160a01b0381166100d857600080fd5b6100e28282610111565b156100ec57600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19166001179055565b60006001600160a01b03821661012657600080fd5b506001600160a01b03166000908152602091909152604090205460ff1690565b6101516000826101ca565b6040516001600160a01b038216907f667f5da192ef185267b681a3ea60c6a496a92711141d3e9cd25b4be0048f30ff90600090a250565b6101936000826100c5565b6040516001600160a01b038216907f4c8efb2f42d55d7d831e421921a3b89a7806bb65fdc7c5ccc226f2706660318990600090a250565b6001600160a01b0381166101dd57600080fd5b6101e78282610111565b6101f057600080fd5b6001600160a01b0316600090815260209190915260409020805460ff19169055565b60006020828403121561022457600080fd5b81356001600160a01b038116811461023b57600080fd5b939250505056fea26469706673582212201506976756b973a13acf58e5837d23484f5bb3db3bf029657438fc202fdd789b64736f6c63430008070033",
+    "sourceMap": "181:1445:7:-:0;;;584:48;;;;;;;;;-1:-1:-1;606:20:7;615:10;606:8;:20::i;:::-;181:1445;;1307:105;1358:18;1368:7;1358:5;:9;;;;;;:18;;;;:::i;:::-;1388;;-1:-1:-1;;;;;1388:18:7;;;;;;;;1307:105;:::o;212:172:6:-;-1:-1:-1;;;;;285:21:6;;277:30;;;;;;323:18;327:4;333:7;323:3;:18::i;:::-;322:19;314:28;;;;;;-1:-1:-1;;;;;351:20:6;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;351:27:6;374:4;351:27;;;212:172::o;714:173::-;801:4;-1:-1:-1;;;;;825:21:6;;817:30;;;;;;-1:-1:-1;;;;;;861:20:6;:11;:20;;;;;;;;;;;;;;;714:173::o;181:1445:7:-;;;;;;;",
+    "deployedSourceMap": "181:1445:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;846:98;;;;;;:::i;:::-;;:::i;:::-;;;470:14:10;;463:22;445:41;;433:2;418:18;846:98:7;;;;;;;1151:67;;;:::i;:::-;;1004:80;;;;;;:::i;:::-;;:::i;846:98::-;900:4;920:18;900:4;930:7;920:9;:18::i;:::-;913:25;846:98;-1:-1:-1;;846:98:7:o;1151:67::-;1189:23;1201:10;1189:11;:23::i;:::-;1151:67::o;1004:80::-;755:18;762:10;755:6;:18::i;:::-;747:27;;;;;;1061:17:::1;1070:7;1061:8;:17::i;:::-;1004:80:::0;:::o;212:172:6:-;-1:-1:-1;;;;;285:21:6;;277:30;;;;;;323:18;327:4;333:7;323:3;:18::i;:::-;322:19;314:28;;;;;;-1:-1:-1;;;;;351:20:6;:11;:20;;;;;;;;;;;:27;;-1:-1:-1;;351:27:6;374:4;351:27;;;212:172::o;714:173::-;801:4;-1:-1:-1;;;;;825:21:6;;817:30;;;;;;-1:-1:-1;;;;;;861:20:6;:11;:20;;;;;;;;;;;;;;;714:173::o;1510:113:7:-;1564:21;:5;1577:7;1564:12;:21::i;:::-;1597:20;;-1:-1:-1;;;;;1597:20:7;;;;;;;;1510:113;:::o;1307:105::-;1358:18;:5;1368:7;1358:9;:18::i;:::-;1388;;-1:-1:-1;;;;;1388:18:7;;;;;;;;1307:105;:::o;455:175:6:-;-1:-1:-1;;;;;531:21:6;;523:30;;;;;;568:18;572:4;578:7;568:3;:18::i;:::-;560:27;;;;;;-1:-1:-1;;;;;596:20:6;619:5;596:20;;;;;;;;;;;:28;;-1:-1:-1;;596:28:6;;;455:175::o;14:286:10:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;168:23;;-1:-1:-1;;;;;220:31:10;;210:42;;200:70;;266:1;263;256:12;200:70;289:5;14:286;-1:-1:-1;;;14:286:10:o",
+    "sourcePath": "c:/Users/ayoub/prog/WheatBc/contracts/WheatAcessControl/SiloRole.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.7+commit.e28d00a7"
+    },
+    "ast": {
+        "absolutePath": "c:/Users/ayoub/prog/WheatBc/contracts/WheatAcessControl/SiloRole.sol",
+        "exportedSymbols": {
+            "Roles": [
+                660
+            ],
+            "SiloRole": [
+                765
+            ]
+        },
+        "id": 766,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 662,
+                "literals": [
+                    "solidity",
+                    ">=",
+                    "0.4",
+                    ".22",
+                    "<",
+                    "0.9",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:32:7"
+            },
+            {
+                "absolutePath": "c:/Users/ayoub/prog/WheatBc/contracts/WheatAcessControl/Roles.sol",
+                "file": "./Roles.sol",
+                "id": 663,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 766,
+                "sourceUnit": 661,
+                "src": "71:21:7",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 765,
+                "linearizedBaseContracts": [
+                    765
+                ],
+                "name": "SiloRole",
+                "nameLocation": "190:8:7",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "id": 667,
+                        "libraryName": {
+                            "id": 664,
+                            "name": "Roles",
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 660,
+                            "src": "210:5:7"
+                        },
+                        "nodeType": "UsingForDirective",
+                        "src": "204:27:7",
+                        "typeName": {
+                            "id": 666,
+                            "nodeType": "UserDefinedTypeName",
+                            "pathNode": {
+                                "id": 665,
+                                "name": "Roles.Role",
+                                "nodeType": "IdentifierPath",
+                                "referencedDeclaration": 564,
+                                "src": "220:10:7"
+                            },
+                            "referencedDeclaration": 564,
+                            "src": "220:10:7",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Role_$564_storage_ptr",
+                                "typeString": "struct Roles.Role"
+                            }
+                        }
+                    },
+                    {
+                        "anonymous": false,
+                        "id": 671,
+                        "name": "SiloAdded",
+                        "nameLocation": "305:9:7",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 670,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 669,
+                                    "indexed": true,
+                                    "mutability": "mutable",
+                                    "name": "account",
+                                    "nameLocation": "331:7:7",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 671,
+                                    "src": "315:23:7",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 668,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "315:7:7",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "314:25:7"
+                        },
+                        "src": "299:41:7"
+                    },
+                    {
+                        "anonymous": false,
+                        "id": 675,
+                        "name": "SiloRemoved",
+                        "nameLocation": "350:11:7",
+                        "nodeType": "EventDefinition",
+                        "parameters": {
+                            "id": 674,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 673,
+                                    "indexed": true,
+                                    "mutability": "mutable",
+                                    "name": "account",
+                                    "nameLocation": "378:7:7",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 675,
+                                    "src": "362:23:7",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 672,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "362:7:7",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "361:25:7"
+                        },
+                        "src": "344:43:7"
+                    },
+                    {
+                        "constant": false,
+                        "id": 678,
+                        "mutability": "mutable",
+                        "name": "Silos",
+                        "nameLocation": "490:5:7",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 765,
+                        "src": "471:24:7",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_Role_$564_storage",
+                            "typeString": "struct Roles.Role"
+                        },
+                        "typeName": {
+                            "id": 677,
+                            "nodeType": "UserDefinedTypeName",
+                            "pathNode": {
+                                "id": 676,
+                                "name": "Roles.Role",
+                                "nodeType": "IdentifierPath",
+                                "referencedDeclaration": 564,
+                                "src": "471:10:7"
+                            },
+                            "referencedDeclaration": 564,
+                            "src": "471:10:7",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Role_$564_storage_ptr",
+                                "typeString": "struct Roles.Role"
+                            }
+                        },
+                        "visibility": "private"
+                    },
+                    {
+                        "body": {
+                            "id": 686,
+                            "nodeType": "Block",
+                            "src": "599:33:7",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "expression": {
+                                                    "id": 682,
+                                                    "name": "msg",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4294967281,
+                                                    "src": "615:3:7",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_message",
+                                                        "typeString": "msg"
+                                                    }
+                                                },
+                                                "id": 683,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "sender",
+                                                "nodeType": "MemberAccess",
+                                                "src": "615:10:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 681,
+                                            "name": "_addSilo",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 748,
+                                            "src": "606:8:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                                                "typeString": "function (address)"
+                                            }
+                                        },
+                                        "id": 684,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "606:20:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 685,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "606:20:7"
+                                }
+                            ]
+                        },
+                        "id": 687,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nameLocation": "-1:-1:-1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 679,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "595:2:7"
+                        },
+                        "returnParameters": {
+                            "id": 680,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "599:0:7"
+                        },
+                        "scope": 765,
+                        "src": "584:48:7",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 697,
+                            "nodeType": "Block",
+                            "src": "740:48:7",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "arguments": [
+                                                    {
+                                                        "expression": {
+                                                            "id": 691,
+                                                            "name": "msg",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 4294967281,
+                                                            "src": "762:3:7",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_magic_message",
+                                                                "typeString": "msg"
+                                                            }
+                                                        },
+                                                        "id": 692,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberName": "sender",
+                                                        "nodeType": "MemberAccess",
+                                                        "src": "762:10:7",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_address",
+                                                            "typeString": "address"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_address",
+                                                            "typeString": "address"
+                                                        }
+                                                    ],
+                                                    "id": 690,
+                                                    "name": "isSilo",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 711,
+                                                    "src": "755:6:7",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
+                                                        "typeString": "function (address) view returns (bool)"
+                                                    }
+                                                },
+                                                "id": 693,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "functionCall",
+                                                "lValueRequested": false,
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "755:18:7",
+                                                "tryCall": false,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            ],
+                                            "id": 689,
+                                            "name": "require",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [
+                                                4294967278,
+                                                4294967278
+                                            ],
+                                            "referencedDeclaration": 4294967278,
+                                            "src": "747:7:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                                                "typeString": "function (bool) pure"
+                                            }
+                                        },
+                                        "id": 694,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "747:27:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 695,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "747:27:7"
+                                },
+                                {
+                                    "id": 696,
+                                    "nodeType": "PlaceholderStatement",
+                                    "src": "781:1:7"
+                                }
+                            ]
+                        },
+                        "id": 698,
+                        "name": "onlySilo",
+                        "nameLocation": "729:8:7",
+                        "nodeType": "ModifierDefinition",
+                        "parameters": {
+                            "id": 688,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "737:2:7"
+                        },
+                        "src": "720:68:7",
+                        "virtual": false,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 710,
+                            "nodeType": "Block",
+                            "src": "906:38:7",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 707,
+                                                "name": "account",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 700,
+                                                "src": "930:7:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 705,
+                                                "name": "Silos",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 678,
+                                                "src": "920:5:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Role_$564_storage",
+                                                    "typeString": "struct Roles.Role storage ref"
+                                                }
+                                            },
+                                            "id": 706,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "has",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 659,
+                                            "src": "920:9:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$_t_struct$_Role_$564_storage_ptr_$_t_address_$returns$_t_bool_$bound_to$_t_struct$_Role_$564_storage_ptr_$",
+                                                "typeString": "function (struct Roles.Role storage pointer,address) view returns (bool)"
+                                            }
+                                        },
+                                        "id": 708,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "920:18:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "functionReturnParameters": 704,
+                                    "id": 709,
+                                    "nodeType": "Return",
+                                    "src": "913:25:7"
+                                }
+                            ]
+                        },
+                        "functionSelector": "12f0dcd8",
+                        "id": 711,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "isSilo",
+                        "nameLocation": "855:6:7",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 701,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 700,
+                                    "mutability": "mutable",
+                                    "name": "account",
+                                    "nameLocation": "870:7:7",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 711,
+                                    "src": "862:15:7",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 699,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "862:7:7",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "861:17:7"
+                        },
+                        "returnParameters": {
+                            "id": 704,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 703,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 711,
+                                    "src": "900:4:7",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "typeName": {
+                                        "id": 702,
+                                        "name": "bool",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "900:4:7",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bool",
+                                            "typeString": "bool"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "899:6:7"
+                        },
+                        "scope": 765,
+                        "src": "846:98:7",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 722,
+                            "nodeType": "Block",
+                            "src": "1054:30:7",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 719,
+                                                "name": "account",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 713,
+                                                "src": "1070:7:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 718,
+                                            "name": "_addSilo",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 748,
+                                            "src": "1061:8:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                                                "typeString": "function (address)"
+                                            }
+                                        },
+                                        "id": 720,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1061:17:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 721,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1061:17:7"
+                                }
+                            ]
+                        },
+                        "functionSelector": "7e4704f3",
+                        "id": 723,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [
+                            {
+                                "id": 716,
+                                "kind": "modifierInvocation",
+                                "modifierName": {
+                                    "id": 715,
+                                    "name": "onlySilo",
+                                    "nodeType": "IdentifierPath",
+                                    "referencedDeclaration": 698,
+                                    "src": "1045:8:7"
+                                },
+                                "nodeType": "ModifierInvocation",
+                                "src": "1045:8:7"
+                            }
+                        ],
+                        "name": "addSilo",
+                        "nameLocation": "1013:7:7",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 714,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 713,
+                                    "mutability": "mutable",
+                                    "name": "account",
+                                    "nameLocation": "1029:7:7",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 723,
+                                    "src": "1021:15:7",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 712,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1021:7:7",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1020:17:7"
+                        },
+                        "returnParameters": {
+                            "id": 717,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1054:0:7"
+                        },
+                        "scope": 765,
+                        "src": "1004:80:7",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 731,
+                            "nodeType": "Block",
+                            "src": "1182:36:7",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "expression": {
+                                                    "id": 727,
+                                                    "name": "msg",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4294967281,
+                                                    "src": "1201:3:7",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_message",
+                                                        "typeString": "msg"
+                                                    }
+                                                },
+                                                "id": 728,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "sender",
+                                                "nodeType": "MemberAccess",
+                                                "src": "1201:10:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 726,
+                                            "name": "_removeSilo",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 764,
+                                            "src": "1189:11:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                                                "typeString": "function (address)"
+                                            }
+                                        },
+                                        "id": 729,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1189:23:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 730,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1189:23:7"
+                                }
+                            ]
+                        },
+                        "functionSelector": "2e4a437b",
+                        "id": 732,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "renounceSilo",
+                        "nameLocation": "1160:12:7",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 724,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1172:2:7"
+                        },
+                        "returnParameters": {
+                            "id": 725,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1182:0:7"
+                        },
+                        "scope": 765,
+                        "src": "1151:67:7",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 747,
+                            "nodeType": "Block",
+                            "src": "1351:61:7",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 740,
+                                                "name": "account",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 734,
+                                                "src": "1368:7:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 737,
+                                                "name": "Silos",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 678,
+                                                "src": "1358:5:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Role_$564_storage",
+                                                    "typeString": "struct Roles.Role storage ref"
+                                                }
+                                            },
+                                            "id": 739,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "add",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 599,
+                                            "src": "1358:9:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Role_$564_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Role_$564_storage_ptr_$",
+                                                "typeString": "function (struct Roles.Role storage pointer,address)"
+                                            }
+                                        },
+                                        "id": 741,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1358:18:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 742,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1358:18:7"
+                                },
+                                {
+                                    "eventCall": {
+                                        "arguments": [
+                                            {
+                                                "id": 744,
+                                                "name": "account",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 734,
+                                                "src": "1398:7:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 743,
+                                            "name": "SiloAdded",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 671,
+                                            "src": "1388:9:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                                                "typeString": "function (address)"
+                                            }
+                                        },
+                                        "id": 745,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1388:18:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 746,
+                                    "nodeType": "EmitStatement",
+                                    "src": "1383:23:7"
+                                }
+                            ]
+                        },
+                        "id": 748,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "_addSilo",
+                        "nameLocation": "1316:8:7",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 735,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 734,
+                                    "mutability": "mutable",
+                                    "name": "account",
+                                    "nameLocation": "1333:7:7",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 748,
+                                    "src": "1325:15:7",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 733,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1325:7:7",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1324:17:7"
+                        },
+                        "returnParameters": {
+                            "id": 736,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1351:0:7"
+                        },
+                        "scope": 765,
+                        "src": "1307:105:7",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 763,
+                            "nodeType": "Block",
+                            "src": "1557:66:7",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 756,
+                                                "name": "account",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 750,
+                                                "src": "1577:7:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "id": 753,
+                                                "name": "Silos",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 678,
+                                                "src": "1564:5:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_Role_$564_storage",
+                                                    "typeString": "struct Roles.Role storage ref"
+                                                }
+                                            },
+                                            "id": 755,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "remove",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 633,
+                                            "src": "1564:12:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_Role_$564_storage_ptr_$_t_address_$returns$__$bound_to$_t_struct$_Role_$564_storage_ptr_$",
+                                                "typeString": "function (struct Roles.Role storage pointer,address)"
+                                            }
+                                        },
+                                        "id": 757,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1564:21:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 758,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1564:21:7"
+                                },
+                                {
+                                    "eventCall": {
+                                        "arguments": [
+                                            {
+                                                "id": 760,
+                                                "name": "account",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 750,
+                                                "src": "1609:7:7",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 759,
+                                            "name": "SiloRemoved",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 675,
+                                            "src": "1597:11:7",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_event_nonpayable$_t_address_$returns$__$",
+                                                "typeString": "function (address)"
+                                            }
+                                        },
+                                        "id": 761,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1597:20:7",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 762,
+                                    "nodeType": "EmitStatement",
+                                    "src": "1592:25:7"
+                                }
+                            ]
+                        },
+                        "id": 764,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "_removeSilo",
+                        "nameLocation": "1519:11:7",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 751,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 750,
+                                    "mutability": "mutable",
+                                    "name": "account",
+                                    "nameLocation": "1539:7:7",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 764,
+                                    "src": "1531:15:7",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    },
+                                    "typeName": {
+                                        "id": 749,
+                                        "name": "address",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1531:7:7",
+                                        "stateMutability": "nonpayable",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_address",
+                                            "typeString": "address"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "1530:17:7"
+                        },
+                        "returnParameters": {
+                            "id": 752,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1557:0:7"
+                        },
+                        "scope": 765,
+                        "src": "1510:113:7",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "internal"
+                    }
+                ],
+                "scope": 766,
+                "src": "181:1445:7",
+                "usedErrors": []
+            }
+        ],
+        "src": "33:1593:7"
+    },
+    "functionHashes": {
+        "addSilo(address)": "7e4704f3",
+        "isSilo(address)": "12f0dcd8",
+        "renounceSilo()": "2e4a437b"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "126400",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        },
+        "external": {
+            "addSilo(address)": "infinite",
+            "isSilo(address)": "2581",
+            "renounceSilo()": "27998"
+        },
+        "internal": {
+            "_addSilo(address)": "27855",
+            "_removeSilo(address)": "27846"
+        }
+    }
+}
