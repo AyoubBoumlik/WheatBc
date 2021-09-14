@@ -1,0 +1,124 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "ConsumerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "ConsumerRemoved",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "addConsumer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isConsumer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceConsumer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/WheatAccessControl/ConsumerRole.sol": "ConsumerRole"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/WheatAccessControl/ConsumerRole.sol": {
+			"keccak256": "0xc6a0f7224133856b9a7ec87a44655d2f5a798ada2695cd023636087b6c35f305",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://414dc5377b09798b3a3a9abcc3e413eeb2ee3aa207bec95ccaccd7e6801f3419",
+				"dweb:/ipfs/QmbhtczidMq2hNS2hQE28wHQ6C5DcDouhvyG9BhzbCS1Ys"
+			]
+		},
+		"contracts/WheatAccessControl/Roles.sol": {
+			"keccak256": "0x72a270954e363227c8da0df4964f940e469dddd6dbb8edcb09b9983168a6fb4b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dcdcb534544196fe4e578b81872c7e07b97dc59fc4089e5bfa9dc584991a096c",
+				"dweb:/ipfs/QmZDbof1N2AoLtA12eQBBFt2kNnrKHTv18rw4UpqDRBfQC"
+			]
+		}
+	},
+	"version": 1
+}
